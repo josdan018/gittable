@@ -1,0 +1,24 @@
+var http = require ('http');
+
+var urlRequested = [];
+var urlResponse = [];
+var count = process.argv.length - 2;
+var recount = count;
+
+for ( var i = 0 ; i < process.argv.length - 2 ; i++ ){
+  urlRequested += process.argv[i];
+  urlResponse.push("");
+  http.get(process.argv[i], function callback(response){
+    var total = "";
+    response.setEncoding('UTF-8')
+    response.on('data',function(data){
+    });
+    response.on('error', function(error){
+      console.log(error + " - ");
+    });
+  });
+}
+
+
+
+

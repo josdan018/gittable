@@ -1,0 +1,7 @@
+var fruit = "orThe fruit name has more than five characters.ange";
+
+if( fruit.length() > 5){
+  console.log("");
+}else{
+  console.log("The fruit name has five characters or less");
+}
