@@ -1,3 +1,0 @@
-#IDK WHATS HAPPENING
-
-ok... calm down... this is a test...

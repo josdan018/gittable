@@ -1,0 +1,20 @@
+{
+  "name": "directoryman",
+  "version": "2.4.0",
+  "description": "module for fooling arround directories",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodejs test.js"
+  },
+  "keywords": [
+    "directory",
+    "fooling",
+    "arround"
+  ],
+  "author": "josdan018",
+  "license": "ISC",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "repository": "localhost.nope"
+}
