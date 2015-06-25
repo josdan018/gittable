@@ -1,20 +1,5 @@
-var http = require('http');
 var concat = require('concat-stream');
 
-
-
-function callback(request, response){
-  console.log("hola mundo");
-  if(request.method === 'POST'){
-    res.end("WHAAAAAAAAAAAAAAAAAAAAAAAAA");	
-
-  } else {
-    response.end();
-  }
-  
-  
-};
-
-var server = http.createServer(callback);
-
-server.listen(process.argv[2]);
+process.stdin.pipe(concat(function(body){
+  process.stdout.write(body.toString().split('').reverse().join(''));
+}));
